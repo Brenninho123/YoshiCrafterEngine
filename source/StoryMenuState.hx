@@ -496,7 +496,9 @@ class StoryMenuState extends FullyModState
 					changeDifficulty(-1);
 			}
 
-			if (controls.ACCEPT)
+			     #if android 
+                        addVirtualPad(FULL, A_B);
+                                  #end
 			{
 				selectWeek();
 			}
